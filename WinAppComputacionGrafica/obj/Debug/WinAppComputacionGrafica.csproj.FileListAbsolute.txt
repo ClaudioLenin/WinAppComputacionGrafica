@@ -1,0 +1,10 @@
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.exe.config
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.exe
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.pdb
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.AssemblyReference.cache
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.Form1.resources
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.Properties.Resources.resources
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.GenerateResource.cache
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.CoreCompileInputs.cache
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.exe
+E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.pdb
