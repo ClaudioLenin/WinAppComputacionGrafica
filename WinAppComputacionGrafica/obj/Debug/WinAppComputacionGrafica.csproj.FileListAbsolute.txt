@@ -8,3 +8,14 @@ E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppCo
 E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.CoreCompileInputs.cache
 E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.exe
 E:\PROJECTS\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.pdb
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.exe.config
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.exe
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\bin\Debug\WinAppComputacionGrafica.pdb
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.Form1.resources
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.Properties.Resources.resources
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.exe
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.pdb

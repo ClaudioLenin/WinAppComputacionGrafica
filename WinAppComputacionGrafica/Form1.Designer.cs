@@ -32,8 +32,9 @@ namespace WinAppComputacionGrafica
             this.pbxVentana = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSegmento = new System.Windows.Forms.Button();
+            this.btnPixel = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -42,13 +43,13 @@ namespace WinAppComputacionGrafica
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblX = new System.Windows.Forms.Label();
             this.lblXtext = new System.Windows.Forms.Label();
             this.lblY = new System.Windows.Forms.Label();
             this.lblYtext = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnPixel = new System.Windows.Forms.Button();
-            this.btnSegmento = new System.Windows.Forms.Button();
+            this.btnCircunferencia = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVentana)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -84,6 +85,7 @@ namespace WinAppComputacionGrafica
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnCircunferencia);
             this.tabPage1.Controls.Add(this.btnSegmento);
             this.tabPage1.Controls.Add(this.btnPixel);
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
@@ -93,6 +95,26 @@ namespace WinAppComputacionGrafica
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "BÁSICOS";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnSegmento
+            // 
+            this.btnSegmento.Location = new System.Drawing.Point(6, 56);
+            this.btnSegmento.Name = "btnSegmento";
+            this.btnSegmento.Size = new System.Drawing.Size(107, 44);
+            this.btnSegmento.TabIndex = 1;
+            this.btnSegmento.Text = "SEGMENTO";
+            this.btnSegmento.UseVisualStyleBackColor = true;
+            this.btnSegmento.Click += new System.EventHandler(this.btnSegmento_Click);
+            // 
+            // btnPixel
+            // 
+            this.btnPixel.Location = new System.Drawing.Point(6, 6);
+            this.btnPixel.Name = "btnPixel";
+            this.btnPixel.Size = new System.Drawing.Size(107, 44);
+            this.btnPixel.TabIndex = 0;
+            this.btnPixel.Text = "PIXEL";
+            this.btnPixel.UseVisualStyleBackColor = true;
+            this.btnPixel.Click += new System.EventHandler(this.btnPixel_Click);
             // 
             // tabPage2
             // 
@@ -104,6 +126,78 @@ namespace WinAppComputacionGrafica
             this.tabPage2.Text = "DINÁMICO";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(599, 369);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "LETRAS";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(599, 369);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "TAPETES";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 27);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(599, 369);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "FRACTALES";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 27);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(599, 369);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "3D";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 27);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(599, 369);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "RELLENO";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 27);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(599, 369);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "CORTE";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 27);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(599, 369);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "PAISAJES";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 27);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(599, 369);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "JUEGOS";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -113,78 +207,6 @@ namespace WinAppComputacionGrafica
             this.label1.Size = new System.Drawing.Size(246, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "COMPUTACIÓN GRÁFICA";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(599, 374);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "LETRAS";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(599, 374);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "TAPETES";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(599, 374);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "FRACTALES";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(599, 374);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "3D";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(599, 374);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "RELLENO";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(599, 374);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "CORTE";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(599, 374);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "PAISAJES";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(599, 374);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "JUEGOS";
-            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // lblX
             // 
@@ -234,25 +256,15 @@ namespace WinAppComputacionGrafica
             this.btnLimpiar.Text = "LIMPIAR";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // btnPixel
+            // btnCircunferencia
             // 
-            this.btnPixel.Location = new System.Drawing.Point(6, 6);
-            this.btnPixel.Name = "btnPixel";
-            this.btnPixel.Size = new System.Drawing.Size(107, 44);
-            this.btnPixel.TabIndex = 0;
-            this.btnPixel.Text = "PIXEL";
-            this.btnPixel.UseVisualStyleBackColor = true;
-            this.btnPixel.Click += new System.EventHandler(this.btnPixel_Click);
-            // 
-            // btnSegmento
-            // 
-            this.btnSegmento.Location = new System.Drawing.Point(6, 56);
-            this.btnSegmento.Name = "btnSegmento";
-            this.btnSegmento.Size = new System.Drawing.Size(107, 44);
-            this.btnSegmento.TabIndex = 1;
-            this.btnSegmento.Text = "SEGMENTO";
-            this.btnSegmento.UseVisualStyleBackColor = true;
-            this.btnSegmento.Click += new System.EventHandler(this.btnSegmento_Click);
+            this.btnCircunferencia.Location = new System.Drawing.Point(6, 106);
+            this.btnCircunferencia.Name = "btnCircunferencia";
+            this.btnCircunferencia.Size = new System.Drawing.Size(107, 44);
+            this.btnCircunferencia.TabIndex = 2;
+            this.btnCircunferencia.Text = "CIRCUNFERENCIA";
+            this.btnCircunferencia.UseVisualStyleBackColor = true;
+            this.btnCircunferencia.Click += new System.EventHandler(this.btnCircunferencia_Click);
             // 
             // Form1
             // 
@@ -301,6 +313,7 @@ namespace WinAppComputacionGrafica
         private System.Windows.Forms.Label lblYtext;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSegmento;
+        private System.Windows.Forms.Button btnCircunferencia;
     }
 }
 
