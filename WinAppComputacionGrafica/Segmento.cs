@@ -10,40 +10,36 @@ namespace WinAppComputacionGrafica
 {
     class Segmento : Vector
     {
-        public double Xf;
-        public double Yf;
         public double x0;
         public double y0;
         public double xf;
         public double yf;
 
-        public Segmento(double x0, double y0, double xf, double yf, Color color0, Bitmap lienzo, PictureBox ventanaP) : base(x0, y0, color0, lienzo, ventanaP)
+        public Segmento(double x0, double y0, double xf, double yf, Color color0, Bitmap lienzo, PictureBox pbxVentana) : base(x0, y0, color0, lienzo, pbxVentana)
         {
-            this.Xf = xf;
-            this.Yf = yf;
             this.x0 = x0;
             this.y0 = y0;
             this.xf = xf;
             this.yf = yf;
         }
-        public override void Encender()
+        public override void encender()
         {
             double t = 0;
             double dt = 0.0013;
             Vector v = new Vector(0, 0, color0, lienzo, pbxVentana);
             do
             {
-                v.x0 = x0 * (1 - t) + Xf * t;
-                v.y0 = y0 * (1 - t) + Yf * t;
-                v.Encender();
+                v.x0 = x0 * (1 - t) + xf * t;
+                v.y0 = y0 * (1 - t) + yf * t;
+                v.encender();
                 t = t + dt;
 
             } while (t <= 1);
         }
-        public override void Apagar()
+        public override void apagar()
         {
             this.color0 = Color.White;
-            Encender();
+            encender();
         }
         ~Segmento()
         {

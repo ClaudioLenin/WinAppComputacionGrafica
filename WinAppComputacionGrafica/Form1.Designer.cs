@@ -32,6 +32,7 @@ namespace WinAppComputacionGrafica
             this.pbxVentana = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCircunferencia = new System.Windows.Forms.Button();
             this.btnSegmento = new System.Windows.Forms.Button();
             this.btnPixel = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -49,7 +50,10 @@ namespace WinAppComputacionGrafica
             this.lblY = new System.Windows.Forms.Label();
             this.lblYtext = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnCircunferencia = new System.Windows.Forms.Button();
+            this.btnPoligono = new System.Windows.Forms.Button();
+            this.btnCurva = new System.Windows.Forms.Button();
+            this.btnLeminscata = new System.Windows.Forms.Button();
+            this.btnHipociclo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVentana)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,6 +89,10 @@ namespace WinAppComputacionGrafica
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnHipociclo);
+            this.tabPage1.Controls.Add(this.btnLeminscata);
+            this.tabPage1.Controls.Add(this.btnCurva);
+            this.tabPage1.Controls.Add(this.btnPoligono);
             this.tabPage1.Controls.Add(this.btnCircunferencia);
             this.tabPage1.Controls.Add(this.btnSegmento);
             this.tabPage1.Controls.Add(this.btnPixel);
@@ -95,6 +103,16 @@ namespace WinAppComputacionGrafica
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "BÁSICOS";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnCircunferencia
+            // 
+            this.btnCircunferencia.Location = new System.Drawing.Point(6, 106);
+            this.btnCircunferencia.Name = "btnCircunferencia";
+            this.btnCircunferencia.Size = new System.Drawing.Size(107, 44);
+            this.btnCircunferencia.TabIndex = 2;
+            this.btnCircunferencia.Text = "CIRCUNFERENCIA";
+            this.btnCircunferencia.UseVisualStyleBackColor = true;
+            this.btnCircunferencia.Click += new System.EventHandler(this.btnCircunferencia_Click);
             // 
             // btnSegmento
             // 
@@ -256,15 +274,45 @@ namespace WinAppComputacionGrafica
             this.btnLimpiar.Text = "LIMPIAR";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // btnCircunferencia
+            // btnPoligono
             // 
-            this.btnCircunferencia.Location = new System.Drawing.Point(6, 106);
-            this.btnCircunferencia.Name = "btnCircunferencia";
-            this.btnCircunferencia.Size = new System.Drawing.Size(107, 44);
-            this.btnCircunferencia.TabIndex = 2;
-            this.btnCircunferencia.Text = "CIRCUNFERENCIA";
-            this.btnCircunferencia.UseVisualStyleBackColor = true;
-            this.btnCircunferencia.Click += new System.EventHandler(this.btnCircunferencia_Click);
+            this.btnPoligono.Location = new System.Drawing.Point(6, 156);
+            this.btnPoligono.Name = "btnPoligono";
+            this.btnPoligono.Size = new System.Drawing.Size(107, 44);
+            this.btnPoligono.TabIndex = 3;
+            this.btnPoligono.Text = "POLÍGONO";
+            this.btnPoligono.UseVisualStyleBackColor = true;
+            this.btnPoligono.Click += new System.EventHandler(this.btnPoligono_Click);
+            // 
+            // btnCurva
+            // 
+            this.btnCurva.Location = new System.Drawing.Point(6, 206);
+            this.btnCurva.Name = "btnCurva";
+            this.btnCurva.Size = new System.Drawing.Size(107, 44);
+            this.btnCurva.TabIndex = 4;
+            this.btnCurva.Text = "CURVA";
+            this.btnCurva.UseVisualStyleBackColor = true;
+            this.btnCurva.Click += new System.EventHandler(this.btnCurva_Click);
+            // 
+            // btnLeminscata
+            // 
+            this.btnLeminscata.Location = new System.Drawing.Point(6, 256);
+            this.btnLeminscata.Name = "btnLeminscata";
+            this.btnLeminscata.Size = new System.Drawing.Size(107, 44);
+            this.btnLeminscata.TabIndex = 5;
+            this.btnLeminscata.Text = "LEMINSCATA";
+            this.btnLeminscata.UseVisualStyleBackColor = true;
+            this.btnLeminscata.Click += new System.EventHandler(this.btnLeminscata_Click);
+            // 
+            // btnHipociclo
+            // 
+            this.btnHipociclo.Location = new System.Drawing.Point(6, 306);
+            this.btnHipociclo.Name = "btnHipociclo";
+            this.btnHipociclo.Size = new System.Drawing.Size(107, 44);
+            this.btnHipociclo.TabIndex = 6;
+            this.btnHipociclo.Text = "HIPOCICLO";
+            this.btnHipociclo.UseVisualStyleBackColor = true;
+            this.btnHipociclo.Click += new System.EventHandler(this.btnHipociclo_Click);
             // 
             // Form1
             // 
@@ -314,6 +362,10 @@ namespace WinAppComputacionGrafica
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSegmento;
         private System.Windows.Forms.Button btnCircunferencia;
+        private System.Windows.Forms.Button btnPoligono;
+        private System.Windows.Forms.Button btnCurva;
+        private System.Windows.Forms.Button btnLeminscata;
+        private System.Windows.Forms.Button btnHipociclo;
     }
 }
 

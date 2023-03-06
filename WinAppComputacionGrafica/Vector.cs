@@ -27,19 +27,19 @@ namespace WinAppComputacionGrafica
 
         }
         
-        public virtual void Encender()
+        public virtual void encender()
         {
-            Pantalla.Pantalla19(this.x0, this.y0, out int Sx, out int Sy);
+            Pantalla.pantallaXY(this.x0, this.y0, out int Sx, out int Sy);
             if (Sx > 0 && Sx < 560 && Sy > 0 && Sy < 400)
             {
                 lienzo.SetPixel(Sx, Sy, color0);
                 pbxVentana.Image = lienzo;
             }
         }
-        public virtual void Apagar()
+        public virtual void apagar()
         {
             color0 = Color.White;
-            Encender();
+            encender();
         }
         ~Vector()
         {

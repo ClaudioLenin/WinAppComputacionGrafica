@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WinAppComputacionGrafica
 {
@@ -16,30 +18,31 @@ namespace WinAppComputacionGrafica
         public static double X2 = 10;
         public static double Y1 = -7.14;
         public static double Y2 = 7.14;
-        public static void Pantalla19(double X, double Y, out int Sx, out int Sy)
+
+        public static void pantallaXY(double X, double Y, out int Sx, out int Sy)
         {
             Sx = (int)(((Sx1 - Sx2) / (X1 - X2)) * (X - X1) + Sx1);
             Sy = (int)(((Sy1 - Sy2) / (Y2 - Y1)) * (Y - Y2) + Sy1);
         }
-        public static void Carta(int Sx, int Sy, out double X, out double Y)
+        public static void carta(int Sx, int Sy, out double X, out double Y)
         {
             X = ((Sx - Sx1) * ((X1 - X2) / (Sx1 - Sx2)) + X1);
             Y = ((Sy - Sy1) * ((Y2 - Y1) / (Sy1 - Sy2)) + Y2);
 
         }
-        public static void Carta2(int Sx, int Sy, out double X, out double Y)
+        public static void carta2(int Sx, int Sy, out double X, out double Y)
         {
             X = ((((Sx - Sx2) * (X1 - X2)) / (Sx1 - Sx2)) + X2) * 0.17;
             Y = ((((Sy - Sy1) * (Y2 - Y1)) / (Sy1 - Sy2)) + Y2) * 0.17;
 
         }
-        public static void Axonometria(double x, double y, double z, out double ax, out double ay)
+        public static void axonometria(double x, double y, double z, out double ax, out double ay)
         {
             ax = y - (x / 2) * Math.Cos(Math.PI / 4);
             ay = z - (x / 2) * Math.Sin(Math.PI / 4);
 
         }
-        public void Rotar(double x, double y, double z, double gama, out double rx, out double ry, out double rz, int eje)
+        public void rotar(double x, double y, double z, double gama, out double rx, out double ry, out double rz, int eje)
         {
             rx = x;
             ry = y;

@@ -16,7 +16,7 @@ namespace WinAppComputacionGrafica
         {
             this.radio = radio;
         }
-        public override void Encender()
+        public override void encender()
         {
             double t = 0;
             double dt = 0.005;
@@ -25,7 +25,7 @@ namespace WinAppComputacionGrafica
             {
                 v.x0 = x0 + radio * Math.Cos(t);
                 v.y0 = y0 + radio * Math.Sin(t);
-                v.Encender();
+                v.encender();
                 t += dt;
             } while (t <= 2 * Math.PI);
         }
