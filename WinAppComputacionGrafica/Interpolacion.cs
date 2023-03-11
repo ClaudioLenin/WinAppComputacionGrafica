@@ -12,9 +12,9 @@ namespace WinAppComputacionGrafica
         {
 
         }
-        public int colores(double X0, double X1, double Y0, double Y1, double i)
+        public int colores(double x0, double x1, double y0, double y1, double i)
         {
-            int cl = (int)((Y0 * ((i - X1) / (X0 - X1))) + (Y1 * ((i - X0) / (X1 - X0))));
+            int cl = (int)((y0 * ((i - x1) / (x0 - x1))) + (y1 * ((i - x0) / (x1 - x0))));
             if (cl >= 256)
                 return 255;
             else
@@ -24,6 +24,7 @@ namespace WinAppComputacionGrafica
                 return cl;
 
         }
+        /*
         public static double segmento(double Y0, double Y1, double t)
         {
             return (-(Y0 * (t - 1)) + (Y1 * t));
@@ -31,6 +32,6 @@ namespace WinAppComputacionGrafica
         public double camino(double X0, double X1, double Y0, double Y1, double i)
         {
             return (double)((Y0 * ((i - X1) / (X0 - X1))) + (Y1 * ((i - X0) / (X1 - X0))));
-        }
+        }*/
     }
 }

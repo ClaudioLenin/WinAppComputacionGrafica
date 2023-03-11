@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WinAppComputacionGrafica
 {
-    internal class Hipociclo
+    internal class MediaCircunferencia
     {
         public double x0;
         public double y0;
@@ -17,7 +17,8 @@ namespace WinAppComputacionGrafica
         public Color color0;
         public Bitmap lienzo;
         public PictureBox pbxVentana;
-        public Hipociclo(double x0, double y0,double radio,double angulo,Color color0, Bitmap lienzo, PictureBox pbxVentana)
+
+        public MediaCircunferencia(double x0, double y0, double radio, double angulo, Color color0, Bitmap lienzo, PictureBox pbxVentana)
         {
             this.x0 = x0;
             this.y0 = y0;
@@ -26,28 +27,52 @@ namespace WinAppComputacionGrafica
             this.color0 = color0;
             this.lienzo = lienzo;
             this.pbxVentana = pbxVentana;
-
         }
         public void encender()
         {
             double x = -7.14;
             double dx = 0.005;
             Vector V = new Vector(0, 0, color0, lienzo, pbxVentana);
+            //LEFT
+             x = Math.PI / 3;
+             do
+             {
+                 V.x0 = x0 + radio * Math.Cos(x);
+                 V.y0 = y0 + radio * Math.Sin(x);
+                 rotar2D(V.x0, V.y0, angulo, out V.x0, out V.y0);
+                 V.encender();
+                 x = x + dx;
+             } while (x <= 5 * (Math.PI / 3));
+
+            //DOWN
+            /*
+            x = (Math.PI);
             do
             {
-                V.x0 = x0 + radio * Math.Pow(Math.Sin(x), 3);
-                V.y0 = y0 + radio * Math.Pow(Math.Cos(x), 3);
+                V.x0 = x0 + radio * Math.Cos(x);
+                V.y0 = y0 + radio * Math.Sin(x);
                 rotar2D(V.x0, V.y0, angulo, out V.x0, out V.y0);
                 V.encender();
                 x = x + dx;
+            } while (x <= ((2 * Math.PI)));
+            */
 
-            } while (x <= 2 * Math.PI);
+            //RIGHT
+            /*
+            x = 3 * (Math.PI / 2);
+            do
+            {
+                V.y0 = x0 + radio * Math.Cos(x);
+                V.y0 = y0 + radio * Math.Sin(x);
+                rotar2D(V.x0, V.y0, angulo, out V.x0, out V.y0);
+                V.encender();
+                x = x + dx;
+            } while (x <= ((2 * Math.PI) + Math.PI / 2));*/
         }
         public void rotar2D(double vx, double vy, double gama, out double rx, out double ry)
         {
             rx = (vx - x0) * Math.Cos(gama) - (vy - y0) * Math.Sin(gama) + x0;
             ry = (vx - x0) * Math.Sin(gama) + (vy - y0) * Math.Cos(gama) + y0;
         }
-
     }
 }
