@@ -19,3 +19,4 @@ C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppCom
 C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.csproj.CoreCompileInputs.cache
 C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.exe
 C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.pdb
+C:\Users\HP\OneDrive\Documentos\PROJECTS\.NET\WinAppComputacionGrafica\WinAppComputacionGrafica\obj\Debug\WinAppComputacionGrafica.Slither.resources
